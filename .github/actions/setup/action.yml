@@ -1,9 +1,8 @@
-name: Square toolchain
+name: ZMusic build toolchain
 description: >
-  Everything a build of Square needs besides the repository: the JDK, the
+  Everything a ZMusic build needs besides the repository: the JDK, the
   Android SDK pieces the Gradle files name, and the Rust toolchain that
-  cross-compiles the librespot core. Kept in one place so the build and the
-  release cannot drift apart.
+  cross-compiles the librespot core. Kept in one place so the build and CI setup cannot drift apart.
 
 runs:
   using: composite

@@ -1,12 +1,12 @@
 name: Build
 
-# Every push to master and every pull request gets an APK, so a change can be
+# Every push to main and every pull request gets an APK, so a change can be
 # tried on a phone without building it by hand. No signing secrets here: with
 # no keystore the build signs with the debug key, and GitHub does not hand
 # secrets to pull requests from forks anyway.
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-          name: square-dev-${{ github.sha }}
+          name: zmusic-dev-${{ github.sha }}
           path: app/build/outputs/apk/dev/app-universal-dev.apk
           retention-days: 14
           if-no-files-found: error

@@ -44,15 +44,16 @@ android {
     namespace = "dev.lelonio.square"
     compileSdk = 37
     ndkVersion = ndkVersionForCargo
-
     defaultConfig {
-        applicationId = "dev.lelonio.square"
+        // Keep the upstream namespace for internal classes/JNI; give this private ZMusic fork its own install identity.
+        applicationId = "com.yatzzcompunity.zmusic.square"
         // cpal's Android host is AAudio, which the ndk crate gates at API 26.
         minSdk = 26
         targetSdk = 35
         versionCode = 52
         versionName = "2.5.0"
         buildConfigField("boolean", "VERBOSE_LOG", "false")
+        buildConfigField("boolean", "AUTO_UPDATE_ENABLED", "false")
 
         // Bungee only for the ABIs that ship; see the splits below.
         externalNativeBuild {

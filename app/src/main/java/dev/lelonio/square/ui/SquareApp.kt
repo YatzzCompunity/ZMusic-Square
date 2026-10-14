@@ -4116,6 +4116,7 @@ private fun UpdatePrompt(
     val state by updater.state.collectAsStateWithLifecycle()
 
     LaunchedEffect(Unit) {
+        if (!dev.lelonio.square.BuildConfig.AUTO_UPDATE_ENABLED) return@LaunchedEffect
         val now = System.currentTimeMillis()
         if (now - prefs.lastUpdateCheck() < UPDATE_CHECK_INTERVAL_MS) return@LaunchedEffect
         // Recorded before the call rather than after it: a phone with no

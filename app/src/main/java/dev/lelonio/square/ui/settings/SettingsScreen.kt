@@ -784,6 +784,14 @@ fun SettingsScreen(
                     )
                 }
                 RowDivider()
+                ActionRow(stringResource(R.string.upstream_credit), destructive = false) {
+                    uriHandler.openUri(UPSTREAM_URL)
+                }
+                RowDivider()
+                ActionRow(stringResource(R.string.legal_notice), destructive = false) {
+                    uriHandler.openUri(GPL_URL)
+                }
+                RowDivider()
                 // Beside the name rather than under About: it is about the
                 // person who makes the app, not about the build.
                 Row(
@@ -794,7 +802,7 @@ fun SettingsScreen(
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Column(Modifier.weight(1f)) {
-                        Text(stringResource(R.string.support_development), style = MaterialTheme.typography.titleMedium)
+                        Text(stringResource(R.string.support_upstream_development), style = MaterialTheme.typography.titleMedium)
                         Text(
                             KOFI_URL.removePrefix("https://"),
                             style = MaterialTheme.typography.bodySmall,
@@ -823,7 +831,7 @@ fun SettingsScreen(
                 verticalArrangement = Arrangement.spacedBy(2.dp),
             ) {
                 Text(
-                    "Square ${BuildConfig.VERSION_NAME}",
+                    "ZMusic ${BuildConfig.VERSION_NAME}",
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                 )
@@ -837,7 +845,7 @@ fun SettingsScreen(
 
         // The update on its own, never folded away: the one thing on this
         // page somebody comes to do rather than to read.
-        if (shown == SettingsPage.About) item("update") {
+        if (shown == SettingsPage.About && BuildConfig.AUTO_UPDATE_ENABLED) item("update") {
             Section(null) {
                 UpdateRow(askToInstall)
             }
@@ -1155,7 +1163,7 @@ private fun StorageChart() {
 @Composable
 private fun IndexFooter() {
     Text(
-        "Square ${BuildConfig.VERSION_NAME}",
+        "ZMusic ${BuildConfig.VERSION_NAME}",
         style = MaterialTheme.typography.bodySmall,
         color = InkDim,
         modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
@@ -2400,9 +2408,11 @@ private val LICENCES = listOf(
     "astring" to "MIT",
 )
 
-private const val GITHUB_USER = "Lelonio"
-private const val GITHUB_URL = "https://github.com/Lelonio"
+private const val GITHUB_USER = "YatzzCompunity"
+private const val GITHUB_URL = "https://github.com/YatzzCompunity"
 private const val KOFI_URL = "https://ko-fi.com/lelonio"
+private const val UPSTREAM_URL = "https://github.com/Lelonio/Square"
+private const val GPL_URL = "https://www.gnu.org/licenses/gpl-3.0.html"
 private const val DISCUSSIONS_URL = "https://github.com/Lelonio/Square/discussions"
 private const val TELEGRAM_COMMUNITY_URL = "https://t.me/+SAOhZ4HTFpMwNDJk"
-private const val NEW_ISSUE_URL = "https://github.com/Lelonio/Square/issues/new/choose"
+private const val NEW_ISSUE_URL = "https://github.com/YatzzCompunity/ZMusic-Square/issues/new/choose"

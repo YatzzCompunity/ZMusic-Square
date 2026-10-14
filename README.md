@@ -2,7 +2,9 @@
   <img src="docs/square.png" width="112" alt="">
 </p>
 
-<h1 align="center">Square</h1
+<h1 align="center">ZMusic</h1>
+
+> **ZMusic public fork** — maintained by [@YatzzCompunity](https://github.com/YatzzCompunity), based on [Square](https://github.com/Lelonio/Square), originally created by [@Lelonio](https://github.com/Lelonio). This is an independent, unofficial fork—not an official Square release. Upstream and third-party attribution and license notices are retained. ZMusic-specific changes include the app name and package ID, maintainer credit, and disabling upstream self-updates. The main project is licensed under GPL-3.0-or-later; the lyrics view retains its separate AGPL-3.0 notice. See [Licence](#licence).
 
 <p align="center">
   An unofficial Android music client for Spotify Premium and YouTube Music,
@@ -10,10 +12,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Lelonio/Square/releases/latest"><img src="https://img.shields.io/github/v/release/Lelonio/Square?label=release" alt="Latest release"></a>
-  <a href="https://github.com/Lelonio/Square/releases"><img src="https://img.shields.io/github/downloads/Lelonio/Square/total" alt="Downloads"></a>
+  <a href="https://github.com/YatzzCompunity/ZMusic-Square/actions/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/YatzzCompunity/ZMusic-Square/build.yml?branch=main&label=latest%20APK%20build" alt="Latest ZMusic APK build"></a>
+  <a href="https://github.com/YatzzCompunity/ZMusic-Square/actions/workflows/build.yml"><img src="https://img.shields.io/badge/download-APK%20artifact-blue" alt="Download APK from Actions artifact"></a>
   <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84" alt="Android 8.0 or later">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/Lelonio/Square" alt="Licence"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0--or--later-blue" alt="GPL-3.0-or-later licence"></a>
 </p>
 
 <p align="center">
@@ -83,14 +85,14 @@
 
 ### Spotify extras
 
-- A **Connect** device: send playback to Square from any other device, and
+- A **Connect** device: send playback to ZMusic from any other device, and
   control your other devices from it.
 - What your friends are listening to.
 - Similar playlists at the end of each playlist.
 - Song credits: performers, writers and producers.
 - What you play is saved to your listening history, as it would be anywhere
   else you listen.
-- Spotify links can open straight in Square.
+- Spotify links can open straight in ZMusic.
 
 ### Android Auto
 
@@ -107,16 +109,9 @@
 
 ## Download
 
-[![Get it on Orion Store](https://raw.githubusercontent.com/RookieEnough/Orion-Store/refs/heads/main/assets/orion-badge.png)](https://rookieenough.github.io/Orion-Data/redirect.html?id=square)
+ZMusic APKs are built by GitHub Actions. Open the [Build workflow](https://github.com/YatzzCompunity/ZMusic-Square/actions/workflows/build.yml), choose the latest successful run, then download the `zmusic-dev-<commit>` file under **Artifacts**. The artifact is a universal APK and is retained for 14 days.
 
-Or
-
-Download the APK from the [latest release](https://github.com/Lelonio/Square/releases/latest)
-and install it. Square needs Android 8.0 or later.
-
-Square updates itself: it checks for new releases and installs them from the
-settings. It is not on the Play Store and cannot be; see the
-[disclaimer](#disclaimer).
+These builds are not signed with a release key; they use a debug key and are for testing. The signing key can differ between runs, so Android may require you to uninstall an earlier ZMusic test build before installing a newer one. ZMusic uses its own package ID (`com.yatzzcompunity.zmusic.square`) and does not use Square upstream self-updates; get future builds from this repository. It supports Android 8.0 or later. It is not on the Play Store; see the [disclaimer](#disclaimer).
 
 <details>
 <summary><b>The first minutes after installing are slower</b></summary>
@@ -126,7 +121,7 @@ the interface is noticeably slower. To do it straight away, open the app once
 and give it a few seconds, then run this with the phone connected:
 
 ```bash
-adb shell cmd package compile -m speed-profile -f dev.lelonio.square
+adb shell cmd package compile -m speed-profile -f com.yatzzcompunity.zmusic.square
 ```
 
 Run before the app has been opened, the command finds nothing to compile.
@@ -135,7 +130,7 @@ Run before the app has been opened, the command finds nothing to compile.
 
 ## First launch
 
-Square first asks where the music should come from. You can change it later in
+ZMusic first asks where the music should come from. You can change it later in
 the settings.
 
 - **YouTube Music** plays straight away. Signing in with Google, from the
@@ -148,41 +143,39 @@ the settings.
 
 ## FAQ
 
-**Square does not appear in Android Auto.**
+**ZMusic does not appear in Android Auto.**
 Android Auto only lists apps installed from the Play Store. Turn on "Unknown
-sources" in Android Auto's developer settings and Square shows up.
+sources" in Android Auto's developer settings and ZMusic shows up.
 
 **Can I use a free Spotify account?**
 No. A free account can sign in, but Spotify only streams to a client like this
 one with Premium. YouTube Music works with no account at all.
 
 **YouTube Music search works, but songs do not play.**
-YouTube changes how its streams are served every so often. Update to the
-latest release, which is usually where the fix is.
+YouTube changes how its streams are served every so often. Install the
+latest successful build from the Actions artifact, which is usually where the fix is.
 
 ## Disclaimer
 
-Square is not affiliated with, endorsed by or connected to Spotify or Google.
-Both sources are used on terms they do not offer: Square re-implements
-Spotify's protocol, which Spotify's Terms of Service forbid, and reads YouTube
-Music through the private endpoints its own web client uses. It cannot be
-published on the Play Store, and you use it at your own risk. There is no
-warranty of any kind; see the licence.
+ZMusic is an independent, unofficial fork based on Square; neither ZMusic nor
+Square is affiliated with, endorsed by or connected to Spotify or Google. The
+Spotify source re-implements Spotify's protocol, which Spotify's Terms of
+Service forbid, and the YouTube Music source uses private endpoints used by its
+web client. ZMusic cannot be published on the Play Store, and you use it at your
+own risk. There is no warranty of any kind; see the licence.
 
 ## Help and feedback
 
-- **Telegram community**: [join Square | Community](https://t.me/+-XDmbFwz7uBkMjc0) for questions, feedback, bug reports and feature requests.
-- **Release announcements**: [Square | Official](https://t.me/SquareAppOfficial) automatically shares new APKs and release notes from GitHub.
-- **Questions** (how something works, how to set it up): [Discussions, Q&A](https://github.com/Lelonio/Square/discussions/categories/q-a)
-- **Ideas and requests**: [Discussions, Ideas](https://github.com/Lelonio/Square/discussions/categories/ideas)
-- **Something broken**: [open an issue](https://github.com/Lelonio/Square/issues/new/choose). If the app closed or froze, attach a report from Settings → About → Save a report.
+- **ZMusic bugs and feedback**: [open an issue in this repository](https://github.com/YatzzCompunity/ZMusic-Square/issues/new/choose). If the app closed or froze, attach a report from Settings → About → Save a report.
+- **Square upstream community and announcements**: [Telegram community](https://t.me/+-XDmbFwz7uBkMjc0) and [official Square release channel](https://t.me/SquareAppOfficial).
+- **Square upstream discussions**: [Q&A](https://github.com/Lelonio/Square/discussions/categories/q-a) and [ideas](https://github.com/Lelonio/Square/discussions/categories/ideas). These are for the original Square project, not ZMusic support.
 
 The same two links are in the app, under Settings → About.
 
 ## Support
 
-Square is free and has no ads. If it is useful to you, you can support its
-development on [Ko-fi](https://ko-fi.com/lelonio).
+ZMusic is free and has no ads. The [Ko-fi link](https://ko-fi.com/lelonio) is
+for Square upstream development and goes to the original maintainer, not ZMusic.
 
 ## Credits
 
@@ -209,9 +202,9 @@ in [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
 
 ## Licence
 
-GPL-3.0-or-later. See [LICENSE](LICENSE).
-
-The lyrics view,
+ZMusic is licensed under GPL-3.0-or-later. See [LICENSE](LICENSE) for the full
+text and preserve all upstream and component-specific notices. The lyrics view,
 [`LyricsView.kt`](app/src/main/java/dev/lelonio/square/ui/player/LyricsView.kt),
-is ported from Spicy Lyrics and stays under AGPL-3.0, combined with the rest as
-section 13 of both licences allows.
+is ported from Spicy Lyrics and remains under AGPL-3.0 as permitted by section
+13 of both licences; the full AGPL text is in
+[`LICENSE-AGPL-3.0.txt`](LICENSE-AGPL-3.0.txt).

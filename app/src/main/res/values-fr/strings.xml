@@ -122,7 +122,7 @@
     <string name="add_failed">Impossible d\'ajouter à %1$s. Si la playlist n\'est pas la vôtre, vous ne pouvez pas la modifier.</string>
     <string name="like_failed">Impossible d\'ajouter aux titres likés.</string>
     <string name="unlike_failed">Impossible de retirer des titres likés.</string>
-    <string name="permission_needed">Square a besoin d\'une autorisation qu\'il n\'a pas. Reconnectez le compte dans les réglages.</string>
+    <string name="permission_needed">ZMusic a besoin d\'une autorisation qu\'il n\'a pas. Reconnectez le compte dans les réglages.</string>
     <string name="remove_failed">Impossible de modifier %1$s. Réessayez dans un instant.</string>
 
     <string name="play_on">Lire sur</string>
@@ -223,14 +223,14 @@
     <string name="onboarding_step_of">Étape %1$d sur %2$d</string>
     <string name="onboarding_login_title">Connectez-vous à Spotify</string>
     <string name="onboarding_login_1">Le navigateur s\'ouvre sur la page de Spotify. Vous autorisez et vous revenez ici tout seul.</string>
-    <string name="onboarding_login_2">Le mot de passe ne s\'écrit que sur la page de Spotify : Square ne le voit pas.</string>
+    <string name="onboarding_login_2">Le mot de passe ne s\'écrit que sur la page de Spotify : ZMusic ne le voit pas.</string>
     <string name="onboarding_login_done">Connexion effectuée</string>
     <string name="onboarding_key_title">Créez votre clé</string>
     <string name="onboarding_key_intro">La recherche et les recommandations passent par l\'API de Spotify, qui s\'utilise avec une clé personnelle. Cela prend une minute, c\'est gratuit et aucune carte n\'est demandée.</string>
     <string name="onboarding_open_dashboard">Ouvrir le tableau de bord</string>
     <string name="onboarding_step_login">Connectez-vous avec le même compte Spotify.</string>
     <string name="onboarding_step_create">En haut à droite, appuyez sur « Create app ».</string>
-    <string name="onboarding_step_names">App name et App description : ce que vous voulez, par exemple Square. Website : laissez vide.</string>
+    <string name="onboarding_step_names">App name et App description : ce que vous voulez, par exemple ZMusic. Website : laissez vide.</string>
     <string name="onboarding_step_redirect">Redirect URI : collez la ligne ci-dessous et appuyez sur « Add ». Vérifiez qu\'elle apparaît dans la liste sous le champ, sinon elle n\'est pas enregistrée.</string>
     <string name="onboarding_step_api">À « Which API/SDKs are you planning to use? », cochez Web API.</string>
     <string name="onboarding_step_terms">Acceptez les conditions et appuyez sur « Save ».</string>
@@ -289,7 +289,7 @@
     <string name="quality_low">Basse</string>
     <string name="quality_auto_note">Automatique part de l\'estimation de la connexion puis suit la musique : un morceau qui se coupe ou qui tarde à démarrer la fait descendre d\'un cran, et plusieurs morceaux rapides la font remonter.</string>
     <string name="quality_restarts">La changer recharge le titre en cours.</string>
-    <string name="premium_required">Square demande Spotify Premium. Un compte gratuit peut se connecter, mais Spotify ne diffuse pas vers un client comme celui-ci.</string>
+    <string name="premium_required">ZMusic demande Spotify Premium. Un compte gratuit peut se connecter, mais Spotify ne diffuse pas vers un client comme celui-ci.</string>
     <string name="new_playlist">Nouvelle playlist</string>
     <string name="rename">Renommer</string>
     <string name="delete">Supprimer</string>
@@ -329,7 +329,7 @@
     <string name="settings_group_help_summary">Communauté, discussions et problèmes</string>
     <string name="settings_group_permissions_summary">Ce que l’app demande à Spotify</string>
     <string name="youtube_sign_in_required">Ce titre ne peut être lu qu’en étant connecté à YouTube Music</string>
-    <string name="youtube_signed_in_unplayable">YouTube ne diffuse ce titre qu’aux comptes connectés, et Square ne peut pas encore le lire</string>
+    <string name="youtube_signed_in_unplayable">YouTube ne diffuse ce titre qu’aux comptes connectés, et ZMusic ne peut pas encore le lire</string>
     <string name="page_app_summary">Langue, barre, système et liens</string>
     <string name="page_downloads">Téléchargements et stockage</string>
     <string name="storage_cleanup">Nettoyage</string>
@@ -340,7 +340,7 @@
     <string name="storage_caches">Caches de l\'appli</string>
     <string name="page_downloads_summary">Ce qui est sur le téléphone et ce qui est téléchargé</string>
     <string name="keep_playing_on_close">Continuer la lecture quand l\'appli est fermée</string>
-    <string name="keep_playing_on_close_note">Retirer Square des applis récentes laisse la musique jouer. La notification l\'arrête toujours.</string>
+    <string name="keep_playing_on_close_note">Retirer ZMusic des applis récentes laisse la musique jouer. La notification l\'arrête toujours.</string>
     <string name="sponsor_block">Passer les parties non musicales</string>
     <string name="sponsor_block_note">Intros, sketchs et parties parlées des clips, signalés par la communauté SponsorBlock. Seul l\'identifiant de la vidéo est envoyé.</string>
     <string name="page_app_bar">Barre du bas</string>
@@ -361,7 +361,7 @@
     <string name="effect_quality_light_note">Le téléphone s’en charge. Plus douce pour les appareils anciens, plus rêche sur les attaques.</string>
     <string name="liked_songs">Titres likés</string>
     <string name="local_files">Fichiers locaux</string>
-    <string name="local_files_needs_permission">Square peut voir la musique de ce téléphone si vous l\'autorisez.</string>
+    <string name="local_files_needs_permission">ZMusic peut voir la musique de ce téléphone si vous l\'autorisez.</string>
     <string name="local_files_allow">Autoriser</string>
     <string name="pinned">Épinglée</string>
     <string name="pin">Épingler en haut</string>
@@ -413,7 +413,7 @@
     <string name="remove_download">Retirer le téléchargement</string>
     <string name="cancel_download">Annuler le téléchargement</string>
     <string name="playback_refused">Spotify ne permet pas de lire des titres pour le moment. Réessaie dans quelques minutes. Si ça continue, déconnecte-toi puis reconnecte-toi.</string>
-    <string name="playback_refused_account">Spotify ne permet pas à ce compte de lire des titres dans des applis comme Square. Cela ne dépend pas de l\'appli ; un autre compte Premium peut fonctionner.</string>
+    <string name="playback_refused_account">Spotify ne permet pas à ce compte de lire des titres dans des applis comme ZMusic. Cela ne dépend pas de l\'appli ; un autre compte Premium peut fonctionner.</string>
     <string name="downloaded">Téléchargé</string>
     <string name="local_file">Fichier local</string>
     <string name="downloading">Téléchargement</string>
@@ -529,14 +529,14 @@
 
     <string name="recap_title">Ton mois en musique</string>
     <string name="recap_plays">%1$d écoutes</string>
-    <string name="recap_minutes">%1$d minutes dans Square</string>
+    <string name="recap_minutes">%1$d minutes dans ZMusic</string>
     <string name="recap_details">Voir tes favoris</string>
     <string name="recap_hide">Masquer les détails</string>
     <string name="recap_previous">Mois précédent</string>
     <string name="recap_next">Mois suivant</string>
     <string name="recap_tracks">Titres les plus écoutés</string>
     <string name="recap_artists">Artistes les plus écoutés</string>
-    <string name="recap_partial">Inclut les écoutes enregistrées et le récent historique Spotify. Certaines écoutes anciennes ou non synchronisées peuvent manquer. Les minutes sont mesurées uniquement dans Square.</string>
+    <string name="recap_partial">Inclut les écoutes enregistrées et le récent historique Spotify. Certaines écoutes anciennes ou non synchronisées peuvent manquer. Les minutes sont mesurées uniquement dans ZMusic.</string>
     <string name="telegram_community">Communauté Telegram</string>
     <string name="login_in_progress">Connexion à Spotify en cours…</string>
     <string name="login_channel">Connexion</string>
@@ -557,12 +557,12 @@
     <string name="new_release_followed_tag">De tes artistes</string>
     <string name="recap_song_of_month">Titre du mois</string>
     <string name="recap_stat_plays">écoutes</string>
-    <string name="recap_stat_minutes">minutes dans Square</string>
+    <string name="recap_stat_minutes">minutes dans ZMusic</string>
     <string name="recap_empty">Aucune écoute ce mois-ci pour l’instant.</string>
-    <string name="recap_partial_youtube">Comprend ce que tu écoutes dans Square et, tant que Square est ouverte, ton historique YouTube Music. Les écoutes depuis d’autres apps et appareils sont approximatives : YouTube ne donne pas l’heure, seulement le jour.</string>
+    <string name="recap_partial_youtube">Comprend ce que tu écoutes dans ZMusic et, tant que ZMusic est ouverte, ton historique YouTube Music. Les écoutes depuis d’autres apps et appareils sont approximatives : YouTube ne donne pas l’heure, seulement le jour.</string>
     <string name="widget_description">En cours de lecture, les commandes et tes playlists récentes</string>
     <string name="widget_nothing_playing">Rien en cours de lecture</string>
-    <string name="widget_open_app">Ouvrir Square</string>
+    <string name="widget_open_app">Ouvrir ZMusic</string>
     <string name="animated_cover_source">Source</string>
     <string name="animated_cover_spotify">Spotify (Canvas)</string>
     <string name="animated_cover_apple">Apple Music</string>
