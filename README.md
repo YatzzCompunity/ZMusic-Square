@@ -4,7 +4,7 @@
 
 <h1 align="center">ZMusic</h1>
 
-> **ZMusic public fork** — maintained by [@YatzzCompunity](https://github.com/YatzzCompunity), based on [Square](https://github.com/Lelonio/Square), originally created by [@Lelonio](https://github.com/Lelonio). This is an independent, unofficial fork—not an official Square release. Upstream and third-party attribution and license notices are retained. ZMusic-specific changes include the app name and package ID, maintainer credit, and disabling upstream self-updates. The main project is licensed under GPL-3.0-or-later; the lyrics view retains its separate AGPL-3.0 notice. See [Licence](#licence).
+> **ZMusic public fork** — maintained by [@YatzzCompunity](https://github.com/YatzzCompunity) Base on Square Open Source. This is an independent, unofficial fork—not an official Square release. Upstream and third-party attribution and license notices are retained. ZMusic-specific changes include the app name and package ID, maintainer credit, and disabling upstream self-updates. The main project is licensed under GPL-3.0-or-later; the lyrics view retains its separate AGPL-3.0 notice. See [Licence](#licence).
 
 <p align="center">
   An unofficial Android music client for Spotify Premium and YouTube Music,
